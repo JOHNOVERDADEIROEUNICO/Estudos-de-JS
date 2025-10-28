@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos em DOM</title>
+    <style>
+        body{
+            background: purple;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos em DOM</h1>
+
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Java Script</p>
+
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        //captura elementos pela tag:
+        var p1 = window.document.getElementsByTagName('p')
+
+        //diferneça entre elements e element, o elements retorna uma lista de todos os elementos que façam parte do grupo especificado. Para modificar elements especifique entre colchetes qual o elemento.
+
+        p1[0].style.color = 'red'
+        p1[1].style.color = 'yellow'
+        //captura elementos pelo id:
+        var p2 = window.document.getElementById('msg')
+
+        p2.style.color = 'green'
+        //modificando por JS o conéudo:
+        p2.innerText = 'Modifiquei por JS!'
+        //o getElementsByName vai acessar qualquer classe, id ou elemento em que apareça este nome.
+        var p3 = window.document.getElementsByName('msg')
+
+        //getElementByClass('') também existe, porém como nao tenho uma classe criada nao vou mostrar aqui.
+
+    </script>
+
+</body>
+</html>

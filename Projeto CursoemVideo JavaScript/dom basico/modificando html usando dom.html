@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos em DOM</title>
+    <style>
+        body{
+            background: purple;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos em DOM</h1>
+
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Java Script</p>
+
+    <script>
+        //pegando uma tag pelo seu nome e a atribuindo a uma variavel:
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color = 'white'
+        window.document.write('acessando o primeiro paragrafo via JS: ' + p1.innerText + "<br>")
+        //pegando o child body e a atribuindo a uma variavel
+        var corpo = window.document.body
+        corpo.style.background = "blue"
+
+        document.write("Aqui o formata em html: " + p1.innerHTML)
+        //demonstrando o innerhtml e text, o html pega o elemento com a formatação html e o text somente o texto do elemento html. isso é importante em casos de formatação.
+        window.alert(p1.innerHTML)
+        window.alert(p1.innerText)
+    </script>
+
+    <div>Clique em mim</div>
+</body>
+</html>

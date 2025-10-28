@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos em DOM</title>
+    <style>
+        body{
+            background: purple;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos em DOM</h1>
+
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Java Script</p>
+
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        //os seletores retornam elementos que poussuam seletores css tendo o query selector que retorna o primeiro elemento daquele seletor e o queryselectorall que retorna da mesma forma que o elements.
+        var div = window.document.querySelector('#msg')
+        div.style.color = 'blue'
+
+       
+
+    </script>
+
+</body>
+</html>

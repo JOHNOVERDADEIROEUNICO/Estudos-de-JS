@@ -1,0 +1,3 @@
+document.getElementById("conteudo").innerHTML = <strong>Bem-Vindo</strong>;//É como se você estivesse adicionando um parágrafo com tags HTML dentro dele, porém, ele tem um problema, pode haver falhas de segurança (XSS) se o conteúdo vier de usuário ou de fontes externas.
+
+document.getElementById("conteudo").innerText = <strong>Bem-Vindo</strong>;//Já nesse carinha aqui ele só adiciona texto, sem a possibilidade de tag HTML dentro dele.

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(115, 115, 229);
+            color: beige;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolore labore eaque officiis, nam dignissimos quae iste unde quam tenetur repellendus aut cupiditate numquam! Quod molestias officia quos harum corrupti.</p>
+
+    <script>
+        //Number.parse
+        var n1 = Number.parseInt(window.prompt('Digite um numero:'))
+        var n2 = Number.parseInt(window.prompt('Digite um segundo numero:'))
+
+        var n3 = n1 + n2
+
+        window.alert('resultado: ' + n3);
+
+        //Number
+        //Perceba que a variavel quando é do tipo var pode ser redeclarada, diferente de let e const
+        var n1 = Number(window.prompt('Digite um numero:'))
+        var n2 = Number(window.prompt('Digite um segundo numero:'))
+
+        var n3 = n1 + n2
+
+        window.alert(`resultado: ${n3}`);
+    </script>
+</body>
+</html>

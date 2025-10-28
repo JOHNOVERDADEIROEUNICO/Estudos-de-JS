@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos em DOM</title>
+    <style>
+        body{
+            background: purple;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos em DOM</h1>
+
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Java Script</p>
+
+    <script>
+        //DEMONSTRANDO A ARVORE DOM E SUAS POSSIBILIDADES, COMO VIMOS APOS WINDOW TEMOS DIVERSOS OBJETOS, COMO DOCUMENT, HISTORY, NAVIGATOR E ETC.. TODOS ESTES PODEM SER USADOS SEPERADAMENTE OU EM CONJUNTO COMO MOSTRO ABAIXO:
+        
+        window.document.write("Olá Mundo!");
+
+        window.document.writeln(window.navigator.geolocation,"<br>")
+
+        window.document.write(window.document.URL)
+    </script>
+
+    <div>Clique em mim</div>
+</body>
+</html>

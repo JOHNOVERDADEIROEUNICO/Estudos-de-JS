@@ -1,0 +1,1 @@
+document.body.insertAdjacentHTML("beforeend", "<p>Texto adicionado!</p>");//Ele insere o conteúdo sem apagar o HTML anterior (diferente do inner), o "beforeend" significa antes do fim, além dele temos "beforebegin", "afterbegin" e "afterend".
