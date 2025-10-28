@@ -9,7 +9,7 @@ function Carregar(){
 
     var data = new Date();
     
-    //var dataAgora = data.hetHours();
+    //var dataAgora = data.getHours();
 
     var hora = 20;
 
