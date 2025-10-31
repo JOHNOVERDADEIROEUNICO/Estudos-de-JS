@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Da Idade</title>
+    <link rel="stylesheet" href="desafio.css">
+</head>
+<body>
+    <header>
+        <h1>Digite suas informações</h1>
+
+        <section>
+
+            <div>
+                <p>Em que ano você nasceu?
+                        <input type="number" name="txtano" id="txtano" min="0">
+                </p>
+                <p>Sexo:
+                    <input type="radio" name="radSex" id="macho" checked> 
+                    <label for="macho">Masculino</label>
+
+                    <input type="radio" name="radSex" id="fem"> 
+                    <label for="fem">Feminino</label>
+                </p>
+                <p>
+                    <input type="button" value="Verificar" onclick="Verificar()">
+                </p>
+                
+            </div>
+            <div id="res">
+            </div>
+            <div>
+                <img id="imagem" src="" alt="">
+            </div>
+
+        </section>
+
+        <script src="desafio.js"></script>
+
+    </header>
+</body>
+</html>
