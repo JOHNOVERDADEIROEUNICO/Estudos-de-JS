@@ -1,0 +1,16 @@
+body{
+    background: #eceba2ff;
+    color: #000000ff;
+    text-align: center;
+    font-family: 'Old English Text MT';
+}
+
+section{
+    background: rgb(246, 246, 246);
+    border-radius: 10px;
+    padding: 1px;
+    width: 500px;
+    margin: auto;
+    text-align: left;
+    
+}
