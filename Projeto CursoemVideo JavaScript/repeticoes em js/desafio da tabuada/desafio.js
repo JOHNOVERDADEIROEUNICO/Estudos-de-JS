@@ -8,14 +8,13 @@ function Tabuada(){
     else{
         let res = 0;
         numNumber = Number(num.value)
-         let item = document.createElement('option');
-        tab.innerHTML = ' '
         for(let c = 1; c <= 10; c++){
             let item = document.createElement('option');
 
             res = numNumber * c;
             item.text = `${numNumber} x ${c} = ${res}`;
             item.value = `tab${c}`;
+            
             tab.appendChild(item);
         }
     }

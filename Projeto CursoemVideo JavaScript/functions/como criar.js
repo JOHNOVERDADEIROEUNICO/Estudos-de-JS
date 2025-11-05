@@ -24,3 +24,18 @@ let v = function(x){
 }
 
 console.log(v(5));
+
+//Exemplo com função criada antes:
+let ar = []
+
+function End(a = 0){
+    
+    ar.push(a);
+
+    console.log(ar)
+}
+
+let array = End;
+
+array(2);
+array(5);
